@@ -11,6 +11,9 @@ body {
     cursor: url('whole-web-curser.svg'), auto;
 
 }
+html {
+  scroll-behavior: smooth;
+}
 
 a {
     cursor: url('link.svg'), auto;
@@ -274,7 +277,7 @@ img {
     align-items: center;
     justify-content: space-between;
     gap: 7rem;
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 1rem;
     border-bottom: solid #282E31 1.4px;
 }
@@ -523,7 +526,7 @@ img {
 }
 
 .price-icon {
-    width: 16px;
+    height: 16px;
 }
 
 .pricing-btn-wrapper {
@@ -587,10 +590,13 @@ img {
 }
 
 /* team-section */
+
 .team-content-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 3rem;
+    gap: 1.5rem;
+    padding-bottom: 5rem;
 }
 
 .team-card-wrapper {
@@ -620,7 +626,27 @@ img {
 }
 
 .socail-icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+    transition: all 0.4s ease;
+}
+.socail-icon:hover{
+transform: scaleX(1.1) scaleY(1.1);
+
+}
+.footer{
+    margin-top: 3rem;
+    background-color: #ba4f5e;
+}
+.footer-wrapper{
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    color: white;
+}
+.footer-link{
+    color: white;
 }
